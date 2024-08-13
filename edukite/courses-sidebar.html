@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content>
+    <title>edukite online learning platform</title>
+    <link rel="icon" type="image/png" href="assets/images/logo/favicon.svg">
+    <link rel="stylesheet" href="assets/css/rt-plugins.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <style>
+      .hidden {
+            display: none;
+        }
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .course-item {
+            /* background-color: white; */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .course-item:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .course-thumb img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+        .course-content {
+            padding: 16px;
+        }
+  </style>
+  </head>
+
+  <body class=" font-gilroy font-medium text-gray text-lg leading-[27px]">
+    <!-- [if IE]> <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+    </p> <![endif] -->
+
+    <header class="site-header  header-normal top-0 bg-white z-[9] rt-sticky">
+      <div class="main-header py-8">
+        <div class="container">
+          <div class=" flex items-center justify-between flex-wrap">
+            <a href="index.html"
+              class="brand-logo flex-none lg:mr-10 md:w-auto max-w-[120px] ">
+              <img src="assets/images/logo/logo.png" alt></a>
+            <div class="flex items-center flex-1">
+              <div class="flex-1 main-menu  lg:relative   xl:mr-[74px] mr-6">
+                <ul class="menu-active-classes">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About</a>
+
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="courses-sidebar.html">Courses</a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="java-full-stack.html">Java Full Stack</a>
+                      </li>
+                      <li>
+                        <a href="net-full-stack.html">.Net Full Stack</a>
+                      </li>
+                      <li>
+                        <a href="mean-stack.html">Mean Stack</a>
+                      </li>
+                      <li>
+                        <a href="python.html">Python</a>
+                      </li>
+                      <li>
+                        <a href="data-science.html">Data Science</a>
+                      </li>
+                      <li>
+                        <a href="oracle-dba.html">Oracle DBA</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="blog.html">Blogs</a>
+                    <li>
+                      <a href="contact.html">Contacts</a>
+                    </li>
+                  </ul>
+                  <div class="lg:block hidden">
+                    <div
+                      class="border border-gray rounded-md  h-[46px] modal-search">
+                      <input type="text"
+                        class=" block w-full rounded-md  h-full border-none ring-0 focus:outline-none  focus:ring-0"
+                        placeholder="Search..">
+                    </div>
+                  </div>
+                </div>
+
+                <div class=" hidden lg:block">
+                  <a href="#" class="btn btn-primary py-[15px] px-8 ">Start Free
+                    Trial</a>
+                </div>
+                <div class=" block   lg:hidden">
+                  <button type="button"
+                    class=" text-3xl md:w-[56px] h-10 w-10 md:h-[56px] rounded bg-[#F8F8F8] flex flex-col items-center justify-center
+                                        menu-click">
+                    <iconify-icon icon="cil:hamburger-menu"
+                      rotate="180deg"></iconify-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:hidden block mt-4">
+            <div class="border border-gray rounded-md  h-[46px] modal-search">
+              <input type="text"
+                class=" block w-full rounded-md  h-full border-none ring-0 focus:outline-none  focus:ring-0"
+                placeholder="Search..">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="openmobile-menu fixed top-0 h-screen pt-10 pb-6 bg-white shadow-box2 w-[320px] overflow-y-auto flex flex-col
+        z-[999]">
+      <div class="flex justify-between px-6 flex-none">
+        <a href="index.html" class="brand-logo flex-none mr-10 ">
+          <img src="assets/images/logo/logo.png" alt>
+        </a>
+        <span class=" text-3xl text-black cursor-pointer rt-mobile-menu-close">
+          <iconify-icon icon="fe:close"></iconify-icon>
+        </span>
+      </div>
+      <div class="mobile-menu mt-6 flex-1 ">
+        <ul class="menu-active-classes">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+
+          </li>
+          <li class="menu-item-has-children">
+            <a href="courses-sidebar.html">Courses</a>
+            <ul class="sub-menu">
+              <li>
+                <a href="java-full-stack.html">Java Full Stack</a>
+              </li>
+              <li>
+                <a href="net-full-stack.html">.Net Full Stack</a>
+              </li>
+              <li>
+                <a href="./mean-stack.html">Mean Stack</a>
+              </li>
+              <li>
+                <a href="python.html">Python</a>
+              </li>
+              <li>
+                <a href="data-science.html">Data Science</a>
+              </li>
+              <li>
+                <a href="oracle-dba.html">Oracle DBA</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="blog.html">Blogs</a>
+            <li>
+              <a href="contact.html">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class=" flex-none pb-4">
+          <div class=" text-center text-black font-semibold mb-2">Follow
+            Us</div>
+          <ul class="flex space-x-4 justify-center ">
+            <li>
+              <a href="#" class="flex h-10 w-10">
+                <img src="assets/images/icon/fb.svg" alt>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex h-10 w-10">
+                <img src="assets/images/icon/tw.svg" alt>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex h-10 w-10">
+                <img src="assets/images/icon/pn.svg" alt>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex h-10 w-10">
+                <img src="assets/images/icon/ins.svg" alt>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="breadcrumbs section-padding bg-[url('../images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
+        <div class="container text-center">
+          <h2>Courses</h2>
+          <nav>
+            <ol class="flex items-center justify-center space-x-3">
+              <li class="breadcrumb-item"><a href="index.html">Pages </a></li>
+              <li class="breadcrumb-item">-</li>
+              <li class="text-primary">Courses </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <div class="nav-tab-wrapper tabs pt-10 section-padding-bottom">
+        <div class="container">
+          <div class="grid grid-cols-12 gap-[30px]">
+            <div class="lg:col-span-8 col-span-12">
+              <div
+                class="flex md:flex-row flex-col items-center mb-14 space-y-6 md:space-y-0">
+                <div
+                  class="flex-1 flex sm:flex-row flex-col  space-x-6  items-center">
+                  <ul id="tabs-nav" class=" flex space-x-4 cata-Tbas">
+                    <li>
+                      <a href="#tab1"
+                        class=" h-[60px] w-[60px]  flex flex-col justify-center items-center">
+                        <iconify-icon
+                          icon="clarity:grid-view-line"></iconify-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#tab2"
+                        class="h-[60px] w-[60px]  flex flex-col justify-center items-center">
+                        <iconify-icon
+                          icon="ant-design:unordered-list-outlined"></iconify-icon>
+                      </a>
+                    </li>
+                  </ul>
+                  <span class=" inline-block mt-4 md:mt-0">
+                    Showing 12 courses of 52
+                  </span>
+                </div>
+                <div class="flex-0">
+                  <div class="min-w-[272px]">
+                    <select id="filterDropdown" onchange="filterCourses()">
+                      <option value="all">Sort By: Popularity</option>
+                      <option value="development">Development</option>
+                      <option value="data-science">Data Science</option>
+                      <option value="ai">AI</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div id="tabs-content">
+                <div id="tab1" class="tab-content">
+                  <div
+                    class="grid md:grid-cols-2 grid-cols-1 gap-[30px] course-container"
+                    id="courseContainer">
+
+                    <a
+                      class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm course-item development"
+                      href="java-full-stack.html"
+                      data-course-name="Java Full Stack">
+                      <div
+                        class="course-thumb h-[248px] rounded-t-[8px]  relative">
+                        <img src="assets/images/all-img/java.jpg" alt
+                          class=" w-full h-full object-cover rounded-t-[8px]">
+                        <span
+                          class="title bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Developemet</span>
+                      </div>
+                      <div class="course-content p-8">
+                        <div
+                          class="text-secondary font-bold text-2xl mb-3">20K</div>
+                        <h4 class=" text-xl mb-3 font-bold">Java Full Stack</h4>
+                        <div
+                          class="flex justify-between  flex-wrap space-y-1 xl:space-y-0">
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/file.svg" alt>
+                            <span>22 Lessons</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/clock.svg" alt>
+                            <span>4h 30m</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 ">
+                            <img src="assets/images/svg/star.svg" alt>
+                            <span>4.8</span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a
+                      class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm course-item development"
+                      href="net-full-stack.html"
+                      data-course-name="NET Full Stack">
+                      <div
+                        class="course-thumb h-[248px] rounded-t-[8px]  relative">
+                        <img src="assets/images/all-img/dot net.jpg" alt
+                          class=" w-full h-full object-cover rounded-t-[8px]">
+                        <span
+                          class="title bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Developemet</span>
+                      </div>
+                      <div class="course-content p-8">
+                        <div
+                          class="text-secondary font-bold text-2xl mb-3">Free</div>
+                        <h4 class=" text-xl mb-3 font-bold">.NET Full Stack</h4>
+                        <div
+                          class="flex justify-between  flex-wrap space-y-1 xl:space-y-0">
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/file.svg" alt>
+                            <span>19 Lessons</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/clock.svg" alt>
+                            <span>4h 30m</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 ">
+                            <img src="assets/images/svg/star.svg" alt>
+                            <span>4.8</span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a
+                      class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm course-item development"
+                      href="mean-stack.html" data-course-name="Mean Stack">
+                      <div
+                        class="course-thumb h-[248px] rounded-t-[8px]  relative">
+                        <img src="assets/images/all-img/mean stack.jpg" alt
+                          class=" w-full h-full object-cover rounded-t-[8px]">
+                        <span
+                          class=" title bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Developemet</span>
+                      </div>
+                      <div class="course-content p-8">
+                        <div
+                          class="text-secondary font-bold text-2xl mb-3">18K</div>
+                        <h4 class=" text-xl mb-3 font-bold">Mean Stack</h4>
+                        <div
+                          class="flex justify-between  flex-wrap space-y-1 xl:space-y-0">
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/file.svg" alt>
+                            <span>24 Lessons</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/clock.svg" alt>
+                            <span>4h 30m</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 ">
+                            <img src="assets/images/svg/star.svg" alt>
+                            <span>4.8</span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a
+                      class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm course-item development"
+                      href="python.html" data-course-name="Python">
+                      <div
+                        class="course-thumb h-[248px] rounded-t-[8px]  relative">
+                        <img src="assets/images/all-img/Python.jpg" alt
+                          class=" w-full h-full object-cover rounded-t-[8px]">
+                        <span
+                          class="title bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Developemet</span>
+                      </div>
+                      <div class="course-content p-8">
+                        <div
+                          class="text-secondary font-bold text-2xl mb-3">22K</div>
+                        <h4 class=" text-xl mb-3 font-bold">Python</h4>
+                        <div
+                          class="flex justify-between  flex-wrap space-y-1 xl:space-y-0">
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/file.svg" alt>
+                            <span>26 Lessons</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/clock.svg" alt>
+                            <span>4h 30m</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 ">
+                            <img src="assets/images/svg/star.svg" alt>
+                            <span>4.8</span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a
+                      class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm course-item data-science"
+                      href="data-science.html" data-course-name="Data Science">
+                      <div
+                        class="course-thumb h-[248px] rounded-t-[8px]  relative">
+                        <img src="assets/images/all-img/data science.jpg" alt
+                          class=" w-full h-full object-cover rounded-t-[8px]">
+                        <span
+                          class=" title bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Data
+                          Science</span>
+                      </div>
+                      <div class="course-content p-8">
+                        <div
+                          class="text-secondary font-bold text-2xl mb-3">45K</div>
+                        <h4 class=" text-xl mb-3 font-bold">Data Science</h4>
+                        <div
+                          class="flex justify-between  flex-wrap space-y-1 xl:space-y-0">
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/file.svg" alt>
+                            <span>32 Lessons</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/clock.svg" alt>
+                            <span>4h 30m</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 ">
+                            <img src="assets/images/svg/star.svg" alt>
+                            <span>4.8</span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a
+                      class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm course-item development"
+                      href="oracle-dba.html" data-course-name="Oracle DBA">
+                      <div
+                        class="course-thumb h-[248px] rounded-t-[8px]  relative">
+                        <img src="assets/images/all-img/oracle.jpg" alt
+                          class=" w-full h-full object-cover rounded-t-[8px]">
+                        <span
+                          class=" title bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Developemet</span>
+                      </div>
+                      <div class="course-content p-8">
+                        <div
+                          class="text-secondary font-bold text-2xl mb-3">27K</div>
+                        <h4 class=" text-xl mb-3 font-bold">Oracle DBA</h4>
+                        <div
+                          class="flex justify-between  flex-wrap space-y-1 xl:space-y-0">
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/file.svg" alt>
+                            <span>24 Lessons</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 mr-3">
+                            <img src="assets/images/svg/clock.svg" alt>
+                            <span>4h 30m</span>
+                          </span>
+                          <span class=" flex items-center space-x-2 ">
+                            <img src="assets/images/svg/star.svg" alt>
+                            <span>4.8</span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+
+                  </div>
+                  <div class="text-center pt-14">
+                    <a href="#"
+                      class=" btn btn-primary inline-flex items-center  space-x-[10px] course-item development">
+                      <span>Load More
+                      </span>
+                      <span class=" relative top-1">
+                        <iconify-icon icon="ion:reload-outline"></iconify-icon>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+               <!-- list items -->
+               <div id="tab2" class="tab-content">
+                <div class="space-y-6 courseContainer" id="courseContainer">
+                  <div class="flex flex-col md:flex-row items-center justify-between p-6 bg-white shadow-lg rounded-lg h-[160px] development"
+                  data-course-name="Java Full Stack">
+                    <!-- Image Side -->
+                    <div class="w-full md:w-1/2 h-full relative">
+                      <a href="java-full-stack.html" class="block">
+                      <img src="assets/images/all-img/oracle.jpg" alt="Related Image" class="rounded-lg object-cover w-full h-full"  >
+                      <span class="bg-secondary py-1 px-3 text-lg rounded text-white absolute left-6 top-6">Development</span>
+                    </a>
+                    </div>
+                  
+                    <!-- Content Side -->
+                    <div class="w-full md:w-1/2 h-full pl-6 flex flex-col justify-center">
+                      <div class="text-secondary font-bold text-3xl mb-4">22k</div>
+                      <h4 class="text-xl font-bold mb-4">java-full-stack</h4>
+                      <div class="flex justify-start  flex-wrap space-x-6 md:space-x-0">
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/file.svg" alt="Lessons Icon" class="w-5 h-5">
+                          <span class="text-gray-700">24 Lessons</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/clock.svg" alt="Duration Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4h 30m</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/star.svg" alt="Rating Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4.8</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  <div class="flex flex-col md:flex-row items-center justify-between p-6 bg-white shadow-lg rounded-lg h-[160px] development" href="net-full-stack.html"
+                  data-course-name="Java Full Stack">
+                    <!-- Image Side -->
+                    <div class="w-full md:w-1/2 h-full relative">
+                      <a href="net-full-stack.html" class="block">
+                      <img src="assets/images/all-img/dot net.jpg" alt="Related Image" class="rounded-lg object-cover w-full h-full"  >
+                      <span class="bg-secondary py-1 px-3 text-lg rounded text-white absolute left-6 top-6">Development</span>
+                      </a>
+                    </div>
+                  
+                    <!-- Content Side -->
+                    <div class="w-full md:w-1/2 h-full pl-6 flex flex-col justify-center">
+                      <div class="text-secondary font-bold text-3xl mb-4">Free</div>
+                      <h4 class="text-xl font-bold mb-4">.NET Full Stack</h4>
+                      <div class="flex justify-start  flex-wrap space-x-6 md:space-x-0">
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/file.svg" alt="Lessons Icon" class="w-5 h-5">
+                          <span class="text-gray-700">24 Lessons</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/clock.svg" alt="Duration Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4h 30m</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/star.svg" alt="Rating Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4.8</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col md:flex-row items-center justify-between p-6 bg-white shadow-lg rounded-lg h-[160px] development" 
+                  data-course-name="Java Full Stack">
+                    <!-- Image Side -->
+                    <div class="w-full md:w-1/2 h-full relative">
+                      <a href="python.html" class="block">
+                      <img src="assets/images/all-img/Python.jpg" alt="Related Image" class="rounded-lg object-cover w-full h-full"  >
+                      <span class="bg-secondary py-1 px-3 text-lg rounded text-white absolute left-6 top-6">Development</span>
+                      </a>
+                    </div>
+                  
+                    <!-- Content Side -->
+                    <div class="w-full md:w-1/2 h-full pl-6 flex flex-col justify-center">
+                      <div class="text-secondary font-bold text-3xl mb-4">22k</div>
+                      <h4 class="text-xl font-bold mb-4">Python</h4>
+                      <div class="flex justify-start  flex-wrap space-x-6 md:space-x-0">
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/file.svg" alt="Lessons Icon" class="w-5 h-5">
+                          <span class="text-gray-700">26 Lessons</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/clock.svg" alt="Duration Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4h 30m</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/star.svg" alt="Rating Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4.8</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col md:flex-row items-center justify-between p-6 bg-white shadow-lg rounded-lg h-[160px] development" 
+                  data-course-name="Java Full Stack">
+                    <!-- Image Side -->
+                    <div class="w-full md:w-1/2 h-full relative">
+                      <a href="mean-stack.html" class="block">
+                      <img src="assets/images/all-img/mean stack.jpg" alt="Related Image" class="rounded-lg object-cover w-full h-full"  >
+                      <span class="bg-secondary py-1 px-3 text-lg rounded text-white absolute left-6 top-6">Development</span>
+                      </a>
+                    </div>
+                  
+                    <!-- Content Side -->
+                    <div class="w-full md:w-1/2 h-full pl-6 flex flex-col justify-center">
+                      <div class="text-secondary font-bold text-3xl mb-4">18k</div>
+                      <h4 class="text-xl font-bold mb-4">Mean-Stack</h4>
+                      <div class="flex justify-start  flex-wrap space-x-6 md:space-x-0">
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/file.svg" alt="Lessons Icon" class="w-5 h-5">
+                          <span class="text-gray-700">24 Lessons</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/clock.svg" alt="Duration Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4h 30m</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/star.svg" alt="Rating Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4.8</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col md:flex-row items-center justify-between p-6 bg-white shadow-lg rounded-lg h-[160px] development" 
+                  data-course-name="data Science">
+                    <!-- Image Side -->
+                    <div class="w-full md:w-1/2 h-full relative">
+                      <a href="data-science.html" class="block">
+                      <img src="assets/images/all-img/data science.jpg" alt="Related Image" class="rounded-lg object-cover w-full h-full"  >
+                      <span class="bg-secondary py-1 px-3 text-lg rounded text-white absolute left-6 top-6">Data Science</span>
+                      </a>
+                    </div>
+                  
+                    <!-- Content Side -->
+                    <div class="w-full md:w-1/2 h-full pl-6 flex flex-col justify-center">
+                      <div class="text-secondary font-bold text-3xl mb-4">45k</div>
+                      <h4 class="text-xl font-bold mb-4">Data Science</h4>
+                      <div class="flex justify-start  flex-wrap space-x-6 md:space-x-0">
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/file.svg" alt="Lessons Icon" class="w-5 h-5">
+                          <span class="text-gray-700">27 Lessons</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/clock.svg" alt="Duration Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4h 30m</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/star.svg" alt="Rating Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4.8</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col md:flex-row items-center justify-between p-6 bg-white shadow-lg rounded-lg h-[160px] development" 
+                  data-course-name="data Science">
+                    <!-- Image Side -->
+                    <div class="w-full md:w-1/2 h-full relative">
+                      <a href="oracle-dba.html" class="block">
+                      <img src="assets/images/all-img/oracle.jpg" alt="Related Image" class="rounded-lg object-cover w-full h-full"  >
+                      <span class="bg-secondary py-1 px-3 text-lg rounded text-white absolute left-6 top-6">Development</span>
+                      </a>
+                    </div>
+                  
+                    <!-- Content Side -->
+                    <div class="w-full md:w-1/2 h-full pl-6 flex flex-col justify-center">
+                      <div class="text-secondary font-bold text-3xl mb-4">27k</div>
+                      <h4 class="text-xl font-bold mb-4">Oracle DBA</h4>
+                      <div class="flex justify-start  flex-wrap space-x-6 md:space-x-0">
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/file.svg" alt="Lessons Icon" class="w-5 h-5">
+                          <span class="text-gray-700">32 Lessons</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/clock.svg" alt="Duration Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4h 30m</span>
+                        </span>
+                        <span class="flex items-center space-x-2">
+                          <img src="assets/images/svg/star.svg" alt="Rating Icon" class="w-5 h-5">
+                          <span class="text-gray-700">4.8</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                    <div class="text-center pt-14">
+                      <a href="#"
+                        class=" btn btn-primary inline-flex items-center  space-x-[10px] course-item development">
+                        <span>Load More
+                        </span>
+                        <span class=" relative top-1">
+                          <iconify-icon
+                            icon="ion:reload-outline"></iconify-icon>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="lg:col-span-4 col-span-12">
+              <div class="sidebarWrapper space-y-[30px]">
+                <div class="wdiget widget_search">
+                  <div
+                    class="bg-[#F8F8F8] flex  rounded-md shadow-e1 items-center  py-[4px] pl-3  relative">
+                    <div class="flex-1">
+                      <input type="text" id="searchInput"
+                        placeholder="Search keyword..."
+                        class="border-none focus:ring-0 bg-transparent">
+                    </div>
+                    <div class="flex-none">
+                      <button class="btn btn-primary" onclick="searchCourses()">
+                        <img src="assets/images/icon/search.svg" alt>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="wdiget widget_catagory">
+                  <h4 class="widget-title">Price Filter</h4>
+                  <div class="slider-range"></div>
+                  <div class="price_slider_amount">
+                    <div class=" mt-6">
+                      <div
+                        class="flex space-x-2 text-xl font-medium text-black">
+                        <span class=" flex-none">
+                          Price:</span>
+                        <input type="text" name="price"
+                          placeholder="Add Your Price"
+                          class="amount flex-1 border-none focus:outline-none focus:ring-0 p-0 text-xl font-medium text-black">
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="wdiget widget_catagory">
+                  <h4 class="widget-title">Categories</h4>
+
+                  <ul class=" list-item space-y-4">
+
+                    <li class=" block">
+                      <a href="#"
+                        class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all
+                        duration-150">
+                        <span>Development (23)</span>
+                        <span class=" text-2xl">
+                          <iconify-icon
+                            icon="heroicons:chevron-right-20-solid"></iconify-icon>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class=" block">
+                      <a href="#"
+                        class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all
+                        duration-150">
+                        <span>Art &amp; Design (45)</span>
+                        <span class=" text-2xl">
+                          <iconify-icon
+                            icon="heroicons:chevron-right-20-solid"></iconify-icon>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class=" block">
+                      <a href="#"
+                        class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all
+                        duration-150">
+                        <span>Data Science (14)</span>
+                        <span class=" text-2xl">
+                          <iconify-icon
+                            icon="heroicons:chevron-right-20-solid"></iconify-icon>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class=" block">
+                      <a href="#"
+                        class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all
+                        duration-150">
+                        <span>Data Science (14)</span>
+                        <span class=" text-2xl">
+                          <iconify-icon
+                            icon="heroicons:chevron-right-20-solid"></iconify-icon>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class=" block">
+                      <a href="#"
+                        class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all
+                        duration-150">
+                        <span>Technology (28)</span>
+                        <span class=" text-2xl">
+                          <iconify-icon
+                            icon="heroicons:chevron-right-20-solid"></iconify-icon>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class=" block">
+                      <a href="#"
+                        class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all
+                        duration-150">
+                        <span>It Management (34)</span>
+                        <span class=" text-2xl">
+                          <iconify-icon
+                            icon="heroicons:chevron-right-20-solid"></iconify-icon>
+                        </span>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="wdiget widget_catagory">
+                  <h4 class="widget-title">Skill Level</h4>
+
+                  <ul class=" list-item space-y-5">
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">All Levels (82)</span>
+                      </label>
+                    </li>
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">Beginner Levels
+                          (82)</span>
+                      </label>
+                    </li>
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">Intermediate Level
+                          (82)</span>
+                      </label>
+                    </li>
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">Expert Level (82)</span>
+                      </label>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="wdiget widget_catagory">
+                  <h4 class="widget-title">Language</h4>
+
+                  <ul class=" list-item space-y-5">
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">Spanish Language</span>
+                      </label>
+                    </li>
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">Arabic Language</span>
+                      </label>
+                    </li>
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">United States (US)</span>
+                      </label>
+                    </li>
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">United Kingdom
+                          (UK)</span>
+                      </label>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="wdiget widget_catagory">
+                  <h4 class="widget-title">Rating By</h4>
+
+                  <ul class=" list-item space-y-5">
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">
+                          <img src="assets/images/svg/rating-1.svg" alt></span>
+                      </label>
+                    </li>
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">
+                          <img src="assets/images/svg/rating-2.svg" alt></span>
+                      </label>
+                    </li>
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">
+                          <img src="assets/images/svg/rating-3.svg" alt></span>
+                      </label>
+                    </li>
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">
+                          <img src="assets/images/svg/rating-4.svg" alt></span>
+                      </label>
+                    </li>
+
+                    <li class=" block">
+                      <label class=" flex space-x-3 form-check cursor-pointer">
+                        <input type="checkbox" class=" hidden form-check-input">
+                        <span
+                          class="ck-box flex flex-col items-center justify-center">
+                          <img src="assets/images/icon/white-check.svg" alt
+                            class="object-contain"></span>
+                        <span class="form-check-label">
+                          <img src="assets/images/svg/rating-5.svg" alt></span>
+                      </label>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="bg-black bg-[url('../images/all-img/footer-bg-1.png')] bg-cover bg-center bg-no-repeat">
+        <div class="section-padding container">
+          <div class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+            <div class="single-footer">
+              <div class="lg:max-w-[270px]">
+                <a href="#" class="mb-10 block">
+                  <img src="assets/images/logo/footer-logo.png" alt>
+                </a>
+                <p>
+                  Lorem ipsum amet, consectetur adipiscing elit. Suspendis
+                  varius enim eros elementum tristique. Duis
+                  cursus.
+                </p>
+                <ul class="flex space-x-4 pt-8">
+                  <li>
+                    <a href="#"
+                      class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                      <iconify-icon icon="bxl:facebook"></iconify-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                      <iconify-icon icon="bxl:twitter"></iconify-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                      <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                      <iconify-icon icon="bxl:instagram"></iconify-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="single-footer">
+              <div class="flex space-x-[80px]">
+                <div class="flex-1 lg:flex-none">
+                  <h4 class="mb-8 text-2xl font-bold text-white">Links</h4>
+                  <ul class="list-item space-y-5">
+                    <li>
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                      <a href="#">Courses</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex-1 lg:flex-none">
+                  <h4 class="mb-8 text-2xl font-bold text-white">Legal</h4>
+                  <ul class="list-item space-y-5">
+                    <li>
+                      <a href="#">Legal</a>
+                    </li>
+                    <li>
+                      <a href="#">Tearms of Use</a>
+                    </li>
+                    <li>
+                      <a href="#">Tearm & Condition</a>
+                    </li>
+                    <li>
+                      <a href="#">Payment Method</a>
+                    </li>
+                    <li>
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="single-footer">
+              <h4 class="mb-8 text-2xl font-bold text-white">Newsletter</h4>
+              <div class="mb-8">
+                Join over
+                <span class="text-primary underline">68,000</span>
+                people getting our emails Lorem ipsum dolor sit amet consectet
+              </div>
+              <div
+                class="mb-4 flex items-center rounded-md bg-white py-[10px] pr-[10px] pl-6 shadow-e1">
+                <div class="flex-none">
+                  <span class=" ">
+                    <img src="assets/images/icon/mail.svg" alt>
+                  </span>
+                </div>
+                <div class="flex-1">
+                  <input type="text" placeholder="Enter your mail"
+                    class="border-none focus:ring-0">
+                </div>
+              </div>
+              <button class="btn btn-primary block w-full text-center">
+                Subscribe Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container border-t border-white border-opacity-[0.1] py-8 text-center text-base">
+          &copy; Copyright 2024 | Online Learning | All Rights Reserved
+        </div>
+      </footer>
+
+      <div class="rt-mobile-menu-overlay"></div>
+      <!-- scripts -->
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/jquery-3.6.0.min.js"></script>
+      <script src="assets/js/rt-plugins.js"></script>
+      <script src="https://unpkg.com/phosphor-icons"></script>
+      <script
+        src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+      <script src="assets/js/app.js"></script>
+      <script src="courses-sidebar.js"></script>
+    </body>
+  </html>

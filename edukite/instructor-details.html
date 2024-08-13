@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>edukite online learning platform</title>
+  <link rel="icon" type="image/png" href="assets/images/logo/favicon.svg">
+  <link rel="stylesheet" href="assets/css/rt-plugins.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class=" font-gilroy font-medium text-gray text-lg leading-[27px]">
+  <!-- [if IE]> <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+    </p> <![endif] -->
+
+  <header class="site-header  header-normal top-0 bg-white z-[9] rt-sticky">
+    <div class="main-header py-8">
+      <div class="container">
+        <div class=" flex items-center justify-between flex-wrap">
+          <a href="index.html" class="brand-logo flex-none lg:mr-10 md:w-auto max-w-[120px] ">
+            <img src="assets/images/logo/logo.svg" alt=""></a>
+          <div class="flex items-center flex-1">
+            <div class="flex-1 main-menu  lg:relative   xl:mr-[74px] mr-6">
+              <ul class="menu-active-classes">
+                <li class=" menu-item-has-children">
+                  <a href="#">Home</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="index.html">Home One</a>
+                    </li>
+                    <li>
+                      <a href="index2.html">Home Two</a>
+                    </li>
+                    <li>
+                      <a href="index3.html">Home Three</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Pages</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="about.html">About 1</a>
+                    </li>
+                    <li>
+                      <a href="about2.html">About 2</a>
+                    </li>
+                    <li>
+                      <a href="instructor.html">instructor 1</a>
+                    </li>
+                    <li>
+                      <a href="instructor2.html">instructor 2</a>
+                    </li>
+                    <li>
+                      <a href="instructor-details.html">instructor Single</a>
+                    </li>
+                    <li>
+                      <a href="event.html">Event</a>
+                    </li>
+                    <li>
+                      <a href="event-single.html">Event single</a>
+                    </li>
+                    <li>
+                      <a href="404.html">404</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Courses</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="courses.html">courses</a>
+                    </li>
+                    <li>
+                      <a href="courses-sidebar.html">courses Sidebar</a>
+                    </li>
+                    <li>
+                      <a href="single-course.html">Single-course</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Blog</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                      <a href="blog-full.html">Full Width</a>
+                    </li>
+                    <li>
+                      <a href="blog-standard.html">Blog Standard</a>
+                    </li>
+                    <li>
+                      <a href="blog-single.html">Single Blog</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="contact.html">Contacts</a>
+                </li>
+              </ul>
+              <div class="lg:block hidden">
+                <div class="border border-gray rounded-md  h-[46px] modal-search">
+                  <input type="text" class=" block w-full rounded-md  h-full border-none ring-0 focus:outline-none  focus:ring-0" placeholder="Search..">
+                </div>
+              </div>
+            </div>
+            <div class="flex-none flex space-x-[18px]">
+              <button type="button" class=" md:w-[56px] md:h-[56px] h-10 w-10 rounded bg-[#F8F8F8] flex flex-col items-center justify-center modal-trigger">
+                <img src="assets/images/svg/search.svg" alt=""></button>
+              <div class=" block   lg:hidden">
+                <button type="button" class=" text-3xl md:w-[56px] h-10 w-10 md:h-[56px] rounded bg-[#F8F8F8] flex flex-col items-center justify-center
+                                                menu-click">
+                  <iconify-icon icon="cil:hamburger-menu" rotate="180deg"></iconify-icon>
+                </button>
+              </div>
+              <div class=" hidden lg:block">
+                <a href="#" class="btn btn-primary py-[15px] px-8 ">Start Free Trial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:hidden block mt-4">
+          <div class="border border-gray rounded-md  h-[46px] modal-search">
+            <input type="text" class=" block w-full rounded-md  h-full border-none ring-0 focus:outline-none  focus:ring-0" placeholder="Search..">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="openmobile-menu fixed top-0 h-screen pt-10 pb-6 bg-white shadow-box2 w-[320px] overflow-y-auto flex flex-col
+        z-[999]">
+    <div class="flex justify-between px-6 flex-none">
+      <a href="index.html" class="brand-logo flex-none mr-10 ">
+        <img src="assets/images/logo/logo.svg" alt="">
+      </a>
+      <span class=" text-3xl text-black cursor-pointer rt-mobile-menu-close">
+            <iconify-icon icon="fe:close"></iconify-icon>
+        </span>
+    </div>
+    <div class="mobile-menu mt-6 flex-1 ">
+      <ul class="menu-active-classes">
+        <li class=" menu-item-has-children">
+          <a href="#">Home</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="index.html">Home One</a>
+            </li>
+            <li>
+              <a href="index2.html">Home Two</a>
+            </li>
+            <li>
+              <a href="index3.html">Home Three</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Pages</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="about.html">About 1</a>
+            </li>
+            <li>
+              <a href="about2.html">About 2</a>
+            </li>
+            <li>
+              <a href="instructor.html">instructor 1</a>
+            </li>
+            <li>
+              <a href="instructor2.html">instructor 2</a>
+            </li>
+            <li>
+              <a href="instructor-details.html">instructor Single</a>
+            </li>
+            <li>
+              <a href="event.html">Event</a>
+            </li>
+            <li>
+              <a href="event-single.html">Event single</a>
+            </li>
+            <li>
+              <a href="404.html">404</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Courses</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="courses.html">courses</a>
+            </li>
+            <li>
+              <a href="courses-sidebar.html">courses Sidebar</a>
+            </li>
+            <li>
+              <a href="single-course.html">Single-course</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Blog</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="blog-full.html">Full Width</a>
+            </li>
+            <li>
+              <a href="blog-standard.html">Blog Standard</a>
+            </li>
+            <li>
+              <a href="blog-single.html">Single Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class=" flex-none pb-4">
+      <div class=" text-center text-black font-semibold mb-2">Follow Us</div>
+      <ul class="flex space-x-4 justify-center ">
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="assets/images/icon/fb.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="assets/images/icon/tw.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="assets/images/icon/pn.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="assets/images/icon/ins.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="breadcrumbs section-padding bg-[url('../images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
+    <div class="container text-center">
+      <h2>About Instructor</h2>
+      <nav>
+        <ol class="flex items-center justify-center space-x-3">
+          <li class="breadcrumb-item"><a href="index.html">Pages </a></li>
+          <li class="breadcrumb-item">-</li>
+          <li class="text-primary">Team Member 1</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div class="section-padding bg-[url('../images/all-img/insbg.png')] bg-contain   bg-no-repeat">
+    <div class="container">
+      <div class="grid grid-cols-12 xl:gap-0 gap-[30px]">
+        <div class="lg:col-span-4 col-span-12 ">
+          <div class="bg-white shadow-box7 rounded-md max-w-[350px] lg:sticky lg:top-10">
+            <div class="h-[400px] mb-8">
+              <img src="assets/images/all-img/single-ins.png" alt="" class="w-full h-full block object-cover rounded-t-md">
+            </div>
+            <div class="px-8 pb-8">
+              <h5 class=" text-2xl font-bold text-black mb-4">Coralina Cloud</h5>
+              <div class="mb-8">
+                Professor & Chair of Department of Computer Science at University the where been since 1994. vulput for the pellentesque
+                commodo.
+              </div>
+              <ul class=" space-y-[19px]">
+                <li class=" flex items-center space-x-3">
+                  <div class="flex-none">
+                    <span class="w-8 h-8 rounded bg-secondary text-white flex flex-col items-center justify-center text-lg">
+                                            <iconify-icon icon="heroicons:envelope"></iconify-icon>
+                                        </span>
+                  </div>
+                  <span class=" flex-1">info@designpixls.com</span>
+                </li>
+                <li class=" flex items-center space-x-3">
+                  <div class="flex-none">
+                    <span class="w-8 h-8 rounded bg-secondary text-white flex flex-col items-center justify-center text-lg">
+                                            <iconify-icon icon="heroicons:phone"></iconify-icon>
+                                        </span>
+                  </div>
+                  <span class=" flex-1">8939 2390 3879 29</span>
+                </li>
+                <li class=" flex items-center space-x-3">
+                  <div class="flex-none">
+                    <span class="w-8 h-8 rounded bg-secondary text-white flex flex-col items-center justify-center text-lg">
+                                            <iconify-icon icon="heroicons:map-pin"></iconify-icon>
+                                        </span>
+                  </div>
+                  <span class=" flex-1">6/2, Stavello Hall, Sydney</span>
+                </li>
+              </ul>
+              <div class=" text-xl text-black mt-8 mb-4">Follow Me On:</div>
+              <ul class="flex space-x-4 ">
+                <li>
+                  <a href="#" class="flex h-10 w-10">
+                    <img src="assets/images/icon/fb.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex h-10 w-10">
+                    <img src="assets/images/icon/tw.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex h-10 w-10">
+                    <img src="assets/images/icon/pn.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex h-10 w-10">
+                    <img src="assets/images/icon/ins.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-8 col-span-12">
+          <div class="mb-10">
+            <h2>Coralina Cloud</h2>
+            <span class=" inline-block text-primary">UI/UX Designer</span>
+          </div>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate pellentesque commodo. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit.
+            <br/> <br/> Donec faucibus imperdiet libero, at lacinia metus. Quisque finibus ante non arcu aliquet, nec vestibulum
+                        dolor condimentum. Nulla facilisi. Vestibulum porttitor vestibulum est eu dignissim. Quisque blandit elementum
+                        convallis. Ut et mi hendrerit, posuere purus ac, facilisis nibh.
+          </div>
+          <div class=" grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[30px] mt-24">
+
+
+            <div class="bg-white shadow-box7 text-center pt-[64px] pb-8 px-[50px]  rounded-[8px] relative my-4">
+              <img src="assets/images/icon/counter-1.svg" alt="" class=" absolute left-1/2 -translate-x-1/2 -top-10">
+              <h4 class=" text-[44px] leading-[66px] text-black font-bold mb-1 ">
+                <span class="counter">
+                    82
+                </span>
+                k+
+              </h4>
+              <p>Enrolled Students</p>
+            </div>
+
+            <div class="bg-white shadow-box7 text-center pt-[64px] pb-8 px-[50px]  rounded-[8px] relative my-4">
+              <img src="assets/images/icon/counter-2.svg" alt="" class=" absolute left-1/2 -translate-x-1/2 -top-10">
+              <h4 class=" text-[44px] leading-[66px] text-black font-bold mb-1 ">
+                <span class="counter">
+                    460
+                </span>
+                +
+              </h4>
+              <p>Academic Programs</p>
+            </div>
+
+            <div class="bg-white shadow-box7 text-center pt-[64px] pb-8 px-[50px]  rounded-[8px] relative my-4">
+              <img src="assets/images/icon/counter-3.svg" alt="" class=" absolute left-1/2 -translate-x-1/2 -top-10">
+              <h4 class=" text-[44px] leading-[66px] text-black font-bold mb-1 ">
+                <span class="counter">
+                    20
+                </span>
+                +
+              </h4>
+              <p>Certified Students</p>
+            </div>
+
+          </div>
+          <div class="mt-20 mb-14">
+            <div class="mini-title">Courses By Coralina</div>
+            <div class="column-title ">
+              Courses By
+              <span class="shape-bg">Coralina</span>
+            </div>
+          </div>
+          <div class=" grid xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-2 grid-cols-1  gap-[30px]">
+
+
+            <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
+              <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
+                <img src="assets/images/all-img/c1.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
+                <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Art &amp; Design</span>
+              </div>
+              <div class="course-content p-8">
+                <div class="text-secondary font-bold text-2xl mb-3">$29.28</div>
+                <h4 class=" text-xl mb-3 font-bold">Basic Fundamentals of Interior &amp; Graphics Design</h4>
+                <div class="flex justify-between  space-x-3">
+                  <span class=" flex items-center space-x-2">
+                        <img src="assets/images/svg/file.svg" alt="">
+                            <span>2 Lessons</span>
+                  </span>
+                  <span class=" flex items-center space-x-2">
+                            <img src="assets/images/svg/clock.svg" alt="">
+                                <span>4h 30m</span>
+                  </span>
+                  <span class=" flex items-center space-x-2">
+                                <img src="assets/images/svg/star.svg" alt="">
+                                    <span>4.8</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
+              <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
+                <img src="assets/images/all-img/c2.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
+                <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Developemet</span>
+              </div>
+              <div class="course-content p-8">
+                <div class="text-secondary font-bold text-2xl mb-3">Free</div>
+                <h4 class=" text-xl mb-3 font-bold">Increasing Engagement with Instagram &amp; Facebook</h4>
+                <div class="flex justify-between  space-x-3">
+                  <span class=" flex items-center space-x-2">
+                        <img src="assets/images/svg/file.svg" alt="">
+                            <span>2 Lessons</span>
+                  </span>
+                  <span class=" flex items-center space-x-2">
+                            <img src="assets/images/svg/clock.svg" alt="">
+                                <span>4h 30m</span>
+                  </span>
+                  <span class=" flex items-center space-x-2">
+                                <img src="assets/images/svg/star.svg" alt="">
+                                    <span>4.8</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
+              <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
+                <img src="assets/images/all-img/c3.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
+                <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Drawing</span>
+              </div>
+              <div class="course-content p-8">
+                <div class="text-secondary font-bold text-2xl mb-3">$72.39</div>
+                <h4 class=" text-xl mb-3 font-bold">Introduction to Color Theory &amp;
+                  Basic UI/UX</h4>
+                <div class="flex justify-between  space-x-3">
+                  <span class=" flex items-center space-x-2">
+                        <img src="assets/images/svg/file.svg" alt="">
+                            <span>2 Lessons</span>
+                  </span>
+                  <span class=" flex items-center space-x-2">
+                            <img src="assets/images/svg/clock.svg" alt="">
+                                <span>4h 30m</span>
+                  </span>
+                  <span class=" flex items-center space-x-2">
+                                <img src="assets/images/svg/star.svg" alt="">
+                                    <span>4.8</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
+              <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
+                <img src="assets/images/all-img/c4.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
+                <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Technology</span>
+              </div>
+              <div class="course-content p-8">
+                <div class="text-secondary font-bold text-2xl mb-3">$72.39</div>
+                <h4 class=" text-xl mb-3 font-bold">Financial Security Thinking and Principles Theory</h4>
+                <div class="flex justify-between  space-x-3">
+                  <span class=" flex items-center space-x-2">
+                        <img src="assets/images/svg/file.svg" alt="">
+                            <span>2 Lessons</span>
+                  </span>
+                  <span class=" flex items-center space-x-2">
+                            <img src="assets/images/svg/clock.svg" alt="">
+                                <span>4h 30m</span>
+                  </span>
+                  <span class=" flex items-center space-x-2">
+                                <img src="assets/images/svg/star.svg" alt="">
+                                    <span>4.8</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+          </div>
+          <div class="text-center lg:pt-14 pt-8">
+            <a href="#" class=" btn btn-primary">View All Courses</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-black bg-[url('../images/all-img/footer-bg-1.png')] bg-cover bg-center bg-no-repeat">
+    <div class="section-padding container">
+      <div class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+        <div class="single-footer">
+          <div class="lg:max-w-[270px]">
+            <a href="#" class="mb-10 block">
+              <img src="assets/images/logo/footer-logo.svg" alt="">
+            </a>
+            <p>
+              Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis
+              cursus.
+            </p>
+            <ul class="flex space-x-4 pt-8">
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:twitter"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:instagram"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="single-footer">
+          <div class="flex space-x-[80px]">
+            <div class="flex-1 lg:flex-none">
+              <h4 class="mb-8 text-2xl font-bold text-white">Links</h4>
+              <ul class="list-item space-y-5">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>
+                </li>
+                <li>
+                  <a href="#">Courses</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1 lg:flex-none">
+              <h4 class="mb-8 text-2xl font-bold text-white">Legal</h4>
+              <ul class="list-item space-y-5">
+                <li>
+                  <a href="#">Legal</a>
+                </li>
+                <li>
+                  <a href="#">Tearms of Use</a>
+                </li>
+                <li>
+                  <a href="#">Tearm & Condition</a>
+                </li>
+                <li>
+                  <a href="#">Payment Method</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="single-footer">
+          <h4 class="mb-8 text-2xl font-bold text-white">Newsletter</h4>
+          <div class="mb-8">
+            Join over
+            <span class="text-primary underline">68,000</span>
+            people getting our emails Lorem ipsum dolor sit amet consectet
+          </div>
+          <div class="mb-4 flex items-center rounded-md bg-white py-[10px] pr-[10px] pl-6 shadow-e1">
+            <div class="flex-none">
+              <span class=" ">
+              <img src="assets/images/icon/mail.svg" alt="">
+            </span>
+            </div>
+            <div class="flex-1">
+              <input type="text" placeholder="Enter your mail" class="border-none focus:ring-0">
+            </div>
+          </div>
+          <button class="btn btn-primary block w-full text-center">
+            Subscribe Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container border-t border-white border-opacity-[0.1] py-8 text-center text-base">
+      &copy; Copyright 2022 | Edumim Template | All Rights Reserved
+    </div>
+  </footer>
+
+  <div class="rt-mobile-menu-overlay"></div>
+  <!-- scripts -->
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/rt-plugins.js"></script>
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

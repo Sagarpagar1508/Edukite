@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>edukite online learning platform</title>
+  <link rel="icon" type="image/png" href="assets/images/logo/favicon.svg">
+  <link rel="stylesheet" href="assets/css/rt-plugins.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class=" font-gilroy font-medium text-gray text-lg leading-[27px]">
+  <!-- [if IE]> <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+    </p> <![endif] -->
+
+  <header class="site-header  header-normal top-0 bg-white z-[9] rt-sticky">
+    <div class="main-header py-8">
+      <div class="container">
+        <div class=" flex items-center justify-between flex-wrap">
+          <a href="index.html" class="brand-logo flex-none lg:mr-10 md:w-auto max-w-[120px] ">
+            <img src="assets/images/logo/logo.png" alt=""></a>
+          <div class="flex items-center flex-1">
+            <div class="flex-1 main-menu  lg:relative   xl:mr-[74px] mr-6">
+              <ul class="menu-active-classes">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                  
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="courses-sidebar.html">Courses</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="java-full-stack.html">Java Full Stack</a>
+                    </li>
+                    <li>
+                      <a href="net-full-stack.html">.Net Full Stack</a>
+                    </li>
+                    <li>
+                      <a href="./mean-stack.html">Mean Stack</a>
+                    </li>
+                    <li>
+                      <a href="python.html">Python</a>
+                    </li>
+                    <li>
+                      <a href="data-science.html">Data Science</a>
+                    </li>
+                    <li>
+                      <a href="oracle-dba.html">Oracle DBA</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="blog.html">Blogs</a>
+                    <li>
+                  <a href="contact.html">Contacts</a>
+                </li>
+              </ul>
+              <div class="lg:block hidden">
+                <div class="border border-gray rounded-md  h-[46px] modal-search">
+                  <input type="text" class=" block w-full rounded-md  h-full border-none ring-0 focus:outline-none  focus:ring-0" placeholder="Search..">
+                </div>
+              </div>
+            </div>
+           
+              <div class=" hidden lg:block">
+                <a href="#" class="btn btn-primary py-[15px] px-8 ">Start Free Trial</a>
+              </div>
+              <div class=" block   lg:hidden">
+                <button type="button" class=" text-3xl md:w-[56px] h-10 w-10 md:h-[56px] rounded bg-[#F8F8F8] flex flex-col items-center justify-center
+                                        menu-click">
+                  <iconify-icon icon="cil:hamburger-menu" rotate="180deg"></iconify-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:hidden block mt-4">
+          <div class="border border-gray rounded-md  h-[46px] modal-search">
+            <input type="text" class=" block w-full rounded-md  h-full border-none ring-0 focus:outline-none  focus:ring-0" placeholder="Search..">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="openmobile-menu fixed top-0 h-screen pt-10 pb-6 bg-white shadow-box2 w-[320px] overflow-y-auto flex flex-col
+        z-[999]">
+    <div class="flex justify-between px-6 flex-none">
+      <a href="index.html" class="brand-logo flex-none mr-10 ">
+        <img src="assets/images/logo/logo.png" alt="">
+      </a>
+      <span class=" text-3xl text-black cursor-pointer rt-mobile-menu-close">
+            <iconify-icon icon="fe:close"></iconify-icon>
+        </span>
+    </div>
+    <div class="mobile-menu mt-6 flex-1 ">
+      <ul class="menu-active-classes">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+          
+        </li>
+        <li class="menu-item-has-children">
+          <a href="courses-sidebar.html">Courses</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="java-full-stack.html">Java Full Stack</a>
+            </li>
+            <li>
+              <a href="net-full-stack.html">.Net Full Stack</a>
+            </li>
+            <li>
+              <a href="#">Mean Stack</a>
+            </li>
+            <li>
+              <a href="#">Python</a>
+            </li>
+            <li>
+              <a href="#">Data Science</a>
+            </li>
+            <li>
+              <a href="#">Oracle DBA</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="blog.html">Blogs</a>
+            <li>
+          <a href="contact.html">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class=" flex-none pb-4">
+      <div class=" text-center text-black font-semibold mb-2">Follow Us</div>
+      <ul class="flex space-x-4 justify-center ">
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="assets/images/icon/fb.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="assets/images/icon/tw.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="assets/images/icon/pn.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex h-10 w-10">
+            <img src="assets/images/icon/ins.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="breadcrumbs section-padding bg-[url('../images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
+    <div class="container text-center">
+      <h2>About Us</h2>
+      <nav>
+        <ol class="flex items-center justify-center space-x-3">
+          <li class="breadcrumb-item"><a href="index.html">Pages </a></li>
+          <li class="breadcrumb-item">-</li>
+          <li class="text-primary">About Us</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- about area start -->
+  <div class="about-area section-padding-top pb-12">
+    <div class="container">
+      <div class="grid grid-cols-12 gap-10">
+        <div class="xl:col-span-7 lg:col-span-6 col-span-12">
+          <img src="assets/images/all-img/learn2.jpg" alt="" />
+        </div>
+        <div class="xl:col-span-5 lg:col-span-6 col-span-12">
+          <div class="mini-title">About Online Training</div>
+          <h4 class="column-title ">
+            We Offer The Best Online
+            <span class="shape-bg">
+                            Education</span>
+          </h4>
+          <div class=" mb-8">
+            Our institute is dedicated to providing the best online education available. With a wide array of expertly designed courses, state-of-the-art learning tools, and a flexible platform, we ensure that you receive a top-notch education from the comfort of your own home. Our experienced instructors, comprehensive curriculum, and robust support system work together to create an unparalleled learning experience that equips you with the skills and knowledge needed to excel in your career and personal development. Join us and experience the excellence of our online education for yourself.
+          </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Feture section start -->
+  <div class="feature-area bg-[url('../images/all-img/section-bg-1.png')] bg-cover bg-no-repeat bg-center section-padding">
+    <div class="container">
+      <div class="text-center">
+        <div class="mini-title">Core Features</div>
+        <div class="column-title ">
+          Why
+          <span class="shape-bg">Choose</span>
+          Edumim
+        </div>
+      </div>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 pt-10">
+
+
+        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+                text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
+            <iconify-icon icon="codicon:globe"></iconify-icon>
+          </div>
+          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">Learn More Anywhere</h4>
+          <div class="transition duration-150 group-hover:text-white">At our institute, we believe that learning shouldn't be confined to the classroom. Our flexible and accessible learning solutions are designed to meet you where you are, whether that's at home, at work, or on the go.
+          </div>
+        </div>
+
+        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+                text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
+            <iconify-icon icon="healthicons:i-training-class-outline"></iconify-icon>
+          </div>
+          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">Expert Instructor</h4>
+          <div class="transition duration-150 group-hover:text-white">Our institute prides itself on having a team of expert instructors who bring a wealth of knowledge and real-world experience to the classroom.
+          </div>
+        </div>
+
+        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+                text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
+            <iconify-icon icon="fluent:handshake-32-regular"></iconify-icon>
+          </div>
+          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">24/7 Strong Support</h4>
+          <div class="transition duration-150 group-hover:text-white">At our institute, we understand that learning doesn’t happen on a 9-to-5 schedule. That’s why we offer 24/7 strong support to assist you at any time of the day or night.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Couter section start -->
+  <div class=" section-padding">
+    <div class="container">
+      <div class="text-center">
+        <div class="mini-title">Some Fun Fact</div>
+        <div class="column-title ">
+          Our Great
+          <span class="shape-bg">Achievement</span>
+        </div>
+      </div>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] pt-10">
+
+
+        <div class="bg-white shadow-box7 text-center pt-[64px] pb-8 px-[50px]  rounded-[8px] relative my-4">
+          <img src="assets/images/icon/counter-1.svg" alt="" class=" absolute left-1/2 -translate-x-1/2 -top-10">
+          <h4 class=" text-[44px] leading-[66px] text-black font-bold mb-1 ">
+            <span class="counter">
+                    2
+                </span>
+            k+
+          </h4>
+          <p>Enrolled Students</p>
+        </div>
+
+        <div class="bg-white shadow-box7 text-center pt-[64px] pb-8 px-[50px]  rounded-[8px] relative my-4">
+          <img src="assets/images/icon/counter-2.svg" alt="" class=" absolute left-1/2 -translate-x-1/2 -top-10">
+          <h4 class=" text-[44px] leading-[66px] text-black font-bold mb-1 ">
+            <span class="counter">
+                    15
+                </span>
+            +
+          </h4>
+          <p>Academic Programs</p>
+        </div>
+
+        <div class="bg-white shadow-box7 text-center pt-[64px] pb-8 px-[50px]  rounded-[8px] relative my-4">
+          <img src="assets/images/icon/counter-3.svg" alt="" class=" absolute left-1/2 -translate-x-1/2 -top-10">
+          <h4 class=" text-[44px] leading-[66px] text-black font-bold mb-1 ">
+            <span class="counter">
+                    5
+                </span>
+            +
+          </h4>
+          <p>Certified Students</p>
+        </div>
+
+        <div class="bg-white shadow-box7 text-center pt-[64px] pb-8 px-[50px]  rounded-[8px] relative my-4">
+          <img src="assets/images/icon/counter-4.svg" alt="" class=" absolute left-1/2 -translate-x-1/2 -top-10">
+          <h4 class=" text-[44px] leading-[66px] text-black font-bold mb-1 ">
+            <span class="counter">
+                    12
+                </span>
+            +
+          </h4>
+          <p>Award Winning</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ 
+  <!-- accrodain start -->
+  <div class="section-padding  bg-white bg-[url('../images/all-img/section-bg-15.png')] bg-bottom  bg-cover bg-no-repeat">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-[30px]">
+        <div>
+          <div class="mini-title">Frequently Asked Question</div>
+          <div class="column-title ">
+            General
+            <span class="shape-bg">Questions</span>
+          </div>
+          <ul class="list accrodains space-y-[30px] lg:max-w-[470px]">
+            <li>
+              <button type="button" class="accrodain-button">
+                <span>What does it take excellent author?</span>
+                <span class="icon-pm"></span>
+              </button>
+              <div class="content hidden">
+                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a certificate for every
+                learning program that you complete at no additional cost.
+              </div>
+            </li>
+            <li>
+              <button type="button" class="accrodain-button">
+                <span>Who will view my content?
+                                </span>
+                <span class="icon-pm"></span>
+              </button>
+              <div class="content hidden">
+                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a certificate for every
+                learning program that you complete at no additional cost.
+              </div>
+            </li>
+            <li>
+              <button type="button" class="accrodain-button">
+                <span>What does it take become an author?
+                                </span>
+                <span class="icon-pm"></span>
+              </button>
+              <div class="content hidden">
+                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a certificate for every
+                learning program that you complete at no additional cost.
+              </div>
+            </li>
+            <li>
+              <button type="button" class="accrodain-button">
+                <span>How to Change my Password easily?</span>
+                <span class="icon-pm"></span>
+              </button>
+              <div class="content hidden">
+                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a certificate for every
+                learning program that you complete at no additional cost.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="assets/images/all-img/learn3.jpg" alt="" class=" mx-auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-black bg-[url('../images/all-img/footer-bg-1.png')] bg-cover bg-center bg-no-repeat">
+    <div class="section-padding container">
+      <div class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+        <div class="single-footer">
+          <div class="lg:max-w-[270px]">
+            <a href="#" class="mb-10 block">
+              <img src="assets/images/logo/footer-logo.png" alt="">
+            </a>
+            <p>
+              Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis
+              cursus.
+            </p>
+            <ul class="flex space-x-4 pt-8">
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:twitter"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex h-12 w-12 flex-col items-center justify-center rounded bg-white bg-opacity-[0.08] text-2xl text-white
+                  transition hover:bg-primary hover:text-white">
+                  <iconify-icon icon="bxl:instagram"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="single-footer">
+          <div class="flex space-x-[80px]">
+            <div class="flex-1 lg:flex-none">
+              <h4 class="mb-8 text-2xl font-bold text-white">Links</h4>
+              <ul class="list-item space-y-5">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>
+                </li>
+                <li>
+                  <a href="#">Courses</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1 lg:flex-none">
+              <h4 class="mb-8 text-2xl font-bold text-white">Legal</h4>
+              <ul class="list-item space-y-5">
+                <li>
+                  <a href="#">Legal</a>
+                </li>
+                <li>
+                  <a href="#">Tearms of Use</a>
+                </li>
+                <li>
+                  <a href="#">Tearm & Condition</a>
+                </li>
+                <li>
+                  <a href="#">Payment Method</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="single-footer">
+          <h4 class="mb-8 text-2xl font-bold text-white">Newsletter</h4>
+          <div class="mb-8">
+            Join over
+            <span class="text-primary underline">68,000</span>
+            people getting our emails Lorem ipsum dolor sit amet consectet
+          </div>
+          <div class="mb-4 flex items-center rounded-md bg-white py-[10px] pr-[10px] pl-6 shadow-e1">
+            <div class="flex-none">
+              <span class=" ">
+              <img src="assets/images/icon/mail.svg" alt="">
+            </span>
+            </div>
+            <div class="flex-1">
+              <input type="text" placeholder="Enter your mail" class="border-none focus:ring-0">
+            </div>
+          </div>
+          <button class="btn btn-primary block w-full text-center">
+            Subscribe Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container border-t border-white border-opacity-[0.1] py-8 text-center text-base">
+      &copy; Copyright 2024 | Online Learning | All Rights Reserved
+    </div>
+  </footer>
+
+  <div class="rt-mobile-menu-overlay"></div>
+  <!-- scripts -->
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/rt-plugins.js"></script>
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
